@@ -1,0 +1,117 @@
+/* Page Container */
+.page-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align at the top */
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: white;
+    color: #282828;
+    text-align: center;
+}
+
+/* Heading Style */
+.page-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Event Cards Section */
+.events {
+    display: flex;
+    justify-content: space-between; /* Space out the cards evenly */
+    gap: 20px;
+    flex-wrap: wrap;
+    animation: fadeIn 1.5s ease-in-out forwards;
+    align-items: center;
+    margin: 0;
+    flex-direction: row; /* Align items side by side */
+}
+
+/* Event Card Styling */
+.event-card {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    width: 300px;
+    height: 400px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    animation: zoomIn 1s ease forwards;
+}
+
+/* Event Content Styling */
+.event-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #57B894;
+    text-align: center;
+    padding: 30px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Button Styling */
+.book-button {
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #57B894;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    animation: popIn 0.7s ease forwards;
+}
+
+/* Button Hover Effect */
+.book-button:hover {
+    background-color: white;
+    color: #57B894;
+}
+
+/* No Courses Message */
+.page-container p {
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes popIn {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

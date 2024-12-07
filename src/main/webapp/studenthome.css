@@ -1,0 +1,14 @@
+@charset "UTF-8";
+.home-text{
+    position: absolute;
+    font-weight: bold;
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 300px;
+    top: 50%;
+    left: 40%;
+    font-size: 30px;
+    color: #333;
+
+}
